@@ -1,0 +1,247 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul[class],
+ol[class] {
+  list-style: none;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 25px 0;
+}
+.header .container{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    vertical-align: auto;
+}
+.menu {
+    margin-left: 244px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+.menu-item {
+    margin-right: 115px;
+}
+.menu-item a{
+    font-size: 15px;
+    color: #030305;
+}
+.menu-item a:hover{
+    color: #2d2d4b;
+    border-bottom: 2px solid #2d2d4b;
+}
+.main{
+    background-image: url('src/assets/img/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 104px 0 154px 0;
+}
+.main-info{
+    max-width: 855px;
+}
+.main-title{
+    font-size: 80px;
+    font-weight: 700;
+    color: #030305;
+    line-height: 110%;
+    margin-bottom: 40px;
+}
+.main-text{
+    font-size: 20px;
+    color: #030305;
+    line-height: 150%;
+    margin-bottom: 40px;
+    max-width: 502px;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #030305;
+    margin-bottom: 40px;
+    line-height: 70px;
+}
+.car-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.car-item {
+    width: 384px;
+    text-align: center;
+    margin-top: 40px;
+}
+.car-item-img:hover img {
+    transform: scale(1.1);
+}
+.car-item-img img {
+    vertical-align: bottom;
+    transition: all .3s;
+}
+.car-item-title {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 150%;
+    color: #030305;
+    padding: 15px 0 17px 0;
+}
+.car-item-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.car-item-point {
+    width: 110px;
+    height: 92px;
+    margin: 0 7.5px;
+}
+.car-item-point img {
+    margin-bottom: 11px;
+}
+.car-item-action{
+    margin-top: 13px;
+}
+.car-item-action .btn{
+    width: 100%;
+    padding: 15px;
+    height: 54px;
+}
+.btn {
+    padding: 20px;
+    background-color: #030305;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    align-items: center;
+    box-sizing: border-box;
+}
+.btn:hover {
+    background-color: #2d2d4b;
+}
+.car-item-point > div:nth-child(2){
+    font-weight: 700;
+}
+
+.price {
+    overflow: hidden;
+    margin-top: 100px;
+}
+.price .container {
+    position: relative;
+    padding-bottom: 121px;
+}
+.price .sub-title {
+    margin-bottom: 20px;
+}
+.price-text {
+    font-size: 16px;
+    color: #5D5D5F;
+    line-height: 130%;
+    margin-bottom: 60px;
+}
+.price-form {
+    max-width: 344px;
+}
+.price-input {
+    width: 100%;
+    height: 54px;
+    border: 1px solid #5D5D5F;
+    padding: 22px 18px;
+    font-size: 16px;
+    color: #000000;
+    box-sizing: border-box;
+    outline: none;
+}
+.mar-bottom{
+    margin-bottom: 15px;
+}
+.price-input::placeholder {
+    color: #5D5D5F;
+}
+.price-form .btn{
+    width: 100%;
+}
+.price-img{
+    position: absolute;
+    left: 401px;
+    bottom: 0;
+}
+footer{
+    border-top: 1px solid #e5e5e5;
+    padding: 25px 0;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rights{
+    font-size: 15px;
+    color: #5D5D5F;
+}
+.error{
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.price-input.ng-touched.ng-invalid{
+    border: 1px solid red;
+}
+.price-input.ng-touched.ng-valid{
+    border: 1px solid #5D5D5F;
+}
+.btn:disabled{
+    background-color: #5D5D5F;
+    cursor: not-allowed;
+}
